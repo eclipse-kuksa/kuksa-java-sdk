@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Project
         uses: ./.github/actions/setup-project
@@ -25,7 +25,7 @@ jobs:
         run: ./gradlew assemble # Do not chain this command because it writes into a file which needs to be re-read inside the next gradle command
 
       - name: Archive .apk file
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: kuksa-java-sdk
           path: kuksa-java-sdk/build/libs/kuksa-java-sdk-*.jar
@@ -39,7 +39,7 @@ jobs:
           upload-code-coverage-reports: true
 
       - name: Archive changelog
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: CHANGELOG.md
           path: CHANGELOG.md
