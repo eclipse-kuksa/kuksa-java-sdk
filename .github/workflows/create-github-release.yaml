@@ -22,7 +22,7 @@ jobs:
         run: ./gradlew setReleaseVersion # Do not chain this command because it writes into a file which needs to be re-read inside the next gradle command
 
       - name: Publish Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           prerelease: true
           body_path: CHANGELOG.md
