@@ -2,7 +2,7 @@
 androidGradlePlugin = "9.3.2" # Check with detekt table first: https://detekt.dev/docs/introduction/compatibility/
 detekt = "1.23.8"
 dockerJavaCore = "3.7.1"
-dokka = "2.2.0"
+dokka = "2.3.0"
 kotlin = "2.4.10"
 ktlint = "0.0" # Maintained inside ktlint.gradle.kts
 grpc = "1.85.1"
