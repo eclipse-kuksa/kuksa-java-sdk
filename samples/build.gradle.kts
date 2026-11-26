@@ -44,5 +44,5 @@ kotlin {
 dependencies {
     implementation(project(":kuksa-java-sdk"))
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
 }
